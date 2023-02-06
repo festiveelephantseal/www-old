@@ -1,0 +1,54 @@
+{
+  "fr": {
+    "intro": "Bienvenue",
+    "about": "Je suis Raghav, un lycéen et un aspirant développeur. Je suis né en Australie, mais je suis indien et j'habite aux états-uni maintenant. J'aime bien la programmation, apprendre des langues, et jouer au geoguessr.",
+    "projects": {
+      "title": "Projets",
+      "proj": [
+        {
+          "name": "Gencord",
+          "link": "https://github.com/festiveelephantseal/gencord",
+          "description": "Une bibliothèque simple et facile pour interagir avec l'API discord"
+        },
+        {
+          "name": "Game of Life",
+          "link": "https://github.com/festiveelephantseal/gameoflife-py",
+          "description": "Le jeu de la vie en python"
+        }
+      ]
+    },
+    "contributions": [
+      {
+        "name": "Vscode-Arduino",
+        "link": "https://github.com/microsoft/vscode-arduino/issues/1163",
+        "description": "J'ai trouvé un problème clé avec l'extension arduino pour visual studio code"
+      }
+    ]
+  },
+  "en": {
+    "intro": "Welcome",
+    "about": "I'm Raghav a high school student and an aspiring developer. I was born in Australia to Indian parents, and I live in the US now. I enjoy programming, learning languages, and playing geoguessr.",
+    "projects": {
+      "title": "Projects",
+      "proj": [
+        {
+          "name": "Gencord",
+          "link": "https://github.com/festiveelephantseal/gencord",
+          "description": "A simple, beginner-friendly, and easy-to-use library for interacting with the Discord API, with minimal syntax."
+        },
+        {
+          "name": "Game of Life",
+          "link": "https://github.com/festiveelephantseal/gameoflife-py",
+          "description": "An implementation of game of life in python"
+        }
+      ]
+    },
+    "contributions": [
+      {
+        "name": "Vscode-Arduino",
+        "link": "https://github.com/microsoft/vscode-arduino/issues/1163",
+        "description": "Found a key issue in the arduino extension for visual studio code"
+      }
+    ]
+  }
+}
