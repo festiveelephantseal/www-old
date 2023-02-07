@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Nav = ({ language, onClick }) => {
   return (
     <nav className="nav">
@@ -14,8 +16,12 @@ const Nav = ({ language, onClick }) => {
           <li>Geoguessr</li>
         </a>
 
+        <Link to="/blog">
+          <li>Blog</li>
+        </Link>
+
         <button className="lang" onClick={onClick}>
-          <li>{language}</li>{" "}
+          <li>{language}</li>
         </button>
       </ul>
     </nav>

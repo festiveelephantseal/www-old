@@ -1,5 +1,9 @@
 import Info from "./components/Info";
 import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Blog from "./components/Blog";
+import posts from "./posts/posts.json";
+import BlogPost from "./components/BlogPost";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -14,7 +18,20 @@ function App() {
 
   return (
     <div>
-      <Info language={lang} onClick={langToggle} />
+      <Routes>
+        <Route
+          path="/"
+          element={<Info language={lang} onClick={langToggle} />}
+        />
+        <Route path="/blog" element={<Blog />} />
+        {posts.posts.map((p) => (
+          <Route
+            key={p.id}
+            path={"/blog/" + p.id}
+            element={<BlogPost post={p.id} />}
+          />
+        ))}
+      </Routes>
     </div>
   );
 }

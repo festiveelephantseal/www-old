@@ -29,7 +29,8 @@ code {
 }
 
 .nav li:hover {
-  border-bottom: 1px solid #e1e3e4;
+  text-decoration: underline #e1e3e4 3px;
+
   cursor: pointer;
 }
 
@@ -47,6 +48,44 @@ code {
   text-decoration: none;
 }
 
-/* .project-link h3:hover {
-  border-bottom: 1px solid #e1e3e4;
-} */
+.project-link h3:hover {
+  text-decoration: underline #e1e3e4 3px;
+}
+
+.blog {
+  height: 700px;
+  width: 750px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  /* border: 1px solid black; */
+}
+
+.blog h2 {
+  color: #ff6d7e;
+}
+
+.blog li {
+  color: #e1e3e4;
+}
+
+.blog p {
+  color: #e1e3e4;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.blog * {
+  text-decoration: none;
+}
+
+.blog-entry h2:hover,
+.blog-entry p:hover {
+  text-decoration: underline #e1e3e4 3px;
+}
+
+.blog-post {
+  margin: 0 auto;
+  height: 700px;
+  width: 750px;
+}
