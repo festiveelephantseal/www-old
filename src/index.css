@@ -88,4 +88,34 @@ code {
   margin: 0 auto;
   height: 700px;
   width: 750px;
+  /* border: 1px solid black; */
+}
+
+.blog-post p {
+  color: #e1e3e4;
+}
+
+.blog-post h1,
+h2,
+h3 {
+  color: #ff6d7e;
+}
+
+.blog-post ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.blog-post li,
+li::marker {
+  color: #e1e3e4;
+}
+
+.blog-post li {
+  margin: 10px 0;
+}
+
+.blog-post a,
+a:visited {
+  color: #7ad5f1;
 }

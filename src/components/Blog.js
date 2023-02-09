@@ -1,4 +1,4 @@
-import posts from "../posts/posts.json";
+import posts from "../posts.json";
 import { Link } from "react-router-dom";
 
 const Blog = () => {
@@ -10,6 +10,7 @@ const Blog = () => {
             <div className="blog-entry">
               <li>
                 <h2>{p.title} </h2>
+
                 <p>{p.date}</p>
               </li>
             </div>

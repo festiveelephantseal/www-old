@@ -2,7 +2,7 @@ import Info from "./components/Info";
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Blog from "./components/Blog";
-import posts from "./posts/posts.json";
+import posts from "./posts.json";
 import BlogPost from "./components/BlogPost";
 
 function App() {

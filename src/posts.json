@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "title": "My Plan For Reaching B1",
+      "id": "b1",
+      "date": "Wed, Feb 8 2023"
+    },
+    {
+      "title": "Introduction",
+      "id": "intro",
+      "date": "Mon, Feb 6 2023"
+    }
+  ]
+}
