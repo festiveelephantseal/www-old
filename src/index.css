@@ -15,7 +15,6 @@ code {
   height: 700px;
   width: 750px;
   margin: 0 auto;
-  /* border: 1px solid black; */
 }
 
 .nav ul {
@@ -36,10 +35,6 @@ code {
 
 .nav a {
   text-decoration: none;
-}
-
-.nav-other {
-  position: absolute;
 }
 
 .nav-other ul {
@@ -81,9 +76,6 @@ code {
   height: 700px;
   width: 750px;
   margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  /* border: 1px solid black; */
 }
 
 .blog-entry h2 {
@@ -130,13 +122,8 @@ h3 {
   padding-left: 0;
 }
 
-.blog-post li,
-li::marker {
+.blog-post li::marker {
   color: #e1e3e4;
-}
-
-.blog-post li {
-  margin: 10px 0;
 }
 
 .blog-post a,

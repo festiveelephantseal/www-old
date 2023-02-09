@@ -28,9 +28,11 @@ const BlogPost = ({ post, language }) => {
   return (
     <div className="blog-post">
       <Nav notHome={true} language={language} />
-      <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
-        {p.content}
-      </ReactMarkdown>
+      <div>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
+          {p.content}
+        </ReactMarkdown>
+      </div>
 
       <Footer isBlog={false} />
     </div>
