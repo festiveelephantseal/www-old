@@ -1,5 +1,6 @@
 import posts from "../posts.json";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const Blog = () => {
   return (
@@ -17,6 +18,8 @@ const Blog = () => {
           </Link>
         ))}
       </ul>
+
+      <Footer isBlog={true} />
     </div>
   );
 };

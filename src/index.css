@@ -119,3 +119,28 @@ li::marker {
 a:visited {
   color: #7ad5f1;
 }
+
+.foot ul {
+  display: flex;
+  column-gap: 10px;
+}
+
+.foot {
+  position: absolute;
+  align-self: flex-end;
+}
+
+.foot li {
+  list-style-type: none;
+  color: #e1e3e4;
+}
+
+.foot li:hover {
+  text-decoration: underline #e1e3e4 3px;
+
+  cursor: pointer;
+}
+
+.foot a {
+  text-decoration: none;
+}

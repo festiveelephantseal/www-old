@@ -4,6 +4,8 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 
+import Footer from "./Footer";
+
 const BlogPost = ({ post }) => {
   const [p, setP] = useState("");
 
@@ -27,6 +29,8 @@ const BlogPost = ({ post }) => {
       <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
         {p.content}
       </ReactMarkdown>
+
+      <Footer isBlog={false} />
     </div>
   );
 };
