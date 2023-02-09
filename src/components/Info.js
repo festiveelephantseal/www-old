@@ -1,21 +1,32 @@
 import Nav from "./Nav";
 import translations from "../translations.json";
+import PropTypes from "prop-types";
 
 const Info = ({ language, onClick }) => {
+  const whiteStyle = {
+    color: "#e1e3e4",
+    paddingLeft: 40,
+  };
+
+  const pinkStyle = {
+    color: "#ff6d7e",
+    paddingLeft: 40,
+  };
+
   return (
     <div className="info">
       <Nav language={language} onClick={onClick} />
-      <h1 style={{ color: "#e1e3e4", paddingLeft: 40 }}>
+      <h1 style={whiteStyle}>
         {language === "en" ? translations.en.intro : translations.fr.intro}
       </h1>
 
-      <h2 style={{ color: "#e1e3e4", paddingLeft: 40 }}>Info</h2>
+      <h2 style={whiteStyle}>Info</h2>
 
-      <p style={{ color: "#e1e3e4", paddingLeft: 40 }}>
+      <p style={whiteStyle}>
         {language === "en" ? translations.en.about : translations.fr.about}
       </p>
 
-      <h2 style={{ color: "#e1e3e4", paddingLeft: 40 }}>
+      <h2 style={whiteStyle}>
         {language === "en"
           ? translations.en.projects.title
           : translations.fr.projects.title}
@@ -25,47 +36,39 @@ const Info = ({ language, onClick }) => {
         ? translations.en.projects.proj.map((p) => (
             <div key={p.name}>
               <a href={p.link} className="project-link">
-                <h3 style={{ color: "#ff6d7e", paddingLeft: 40 }}>{p.name}</h3>
+                <h3 style={pinkStyle}>{p.name}</h3>
               </a>
-              <p style={{ color: "#e1e3e4", paddingLeft: 40 }}>
-                {p.description}
-              </p>
+              <p style={whiteStyle}>{p.description}</p>
             </div>
           ))
         : translations.fr.projects.proj.map((p) => (
             <div key={p.name}>
               <a href={p.link} className="project-link">
-                <h3 style={{ color: "#ff6d7e", paddingLeft: 40 }}>{p.name}</h3>
+                <h3 style={pinkStyle}>{p.name}</h3>
               </a>
-              <p style={{ color: "#e1e3e4", paddingLeft: 40 }}>
-                {p.description}
-              </p>
+              <p style={whiteStyle}>{p.description}</p>
             </div>
           ))}
 
-      <h2 style={{ color: "#e1e3e4", paddingLeft: 40 }}>Contributions</h2>
+      <h2 style={whiteStyle}>Contributions</h2>
 
       {language === "en"
         ? translations.en.contributions.map((c) => (
             <div key={c.name}>
               {" "}
               <a href={c.link} className="project-link">
-                <h3 style={{ color: "#ff6d7e", paddingLeft: 40 }}>{c.name}</h3>
+                <h3 style={pinkStyle}>{c.name}</h3>
               </a>
-              <p style={{ color: "#e1e3e4", paddingLeft: 40 }}>
-                {c.description}
-              </p>
+              <p style={whiteStyle}>{c.description}</p>
             </div>
           ))
         : translations.fr.contributions.map((c) => (
             <div key={c.name}>
               {" "}
               <a href={c.link} className="project-link">
-                <h3 style={{ color: "#ff6d7e", paddingLeft: 40 }}>{c.name}</h3>
+                <h3 style={pinkStyle}>{c.name}</h3>
               </a>
-              <p style={{ color: "#e1e3e4", paddingLeft: 40 }}>
-                {c.description}
-              </p>
+              <p style={whiteStyle}>{c.description}</p>
             </div>
           ))}
     </div>
@@ -73,3 +76,8 @@ const Info = ({ language, onClick }) => {
 };
 
 export default Info;
+
+Info.propTypes = {
+  language: PropTypes.string,
+  onClick: PropTypes.func,
+};
