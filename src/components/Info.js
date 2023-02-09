@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import translations from "../translations.json";
+import PropTypes from "prop-types";
 
 const Info = ({ language, onClick }) => {
   const whiteStyle = {
@@ -75,3 +76,8 @@ const Info = ({ language, onClick }) => {
 };
 
 export default Info;
+
+Info.propTypes = {
+  language: PropTypes.string,
+  onClick: PropTypes.func,
+};
