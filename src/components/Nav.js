@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const Nav = ({ language, onClick }) => {
+const Nav = ({ language, onClick, notHome }) => {
   return (
-    <nav className="nav">
+    <nav className={notHome ? "nav-other" : "nav"}>
       <ul>
         <a href="https://github.com/festiveelephantseal">
           <li>Github</li>

@@ -5,8 +5,9 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 
 import Footer from "./Footer";
+import Nav from "./Nav";
 
-const BlogPost = ({ post }) => {
+const BlogPost = ({ post, language }) => {
   const [p, setP] = useState("");
 
   useEffect(() => {
@@ -26,6 +27,7 @@ const BlogPost = ({ post }) => {
 
   return (
     <div className="blog-post">
+      <Nav notHome={true} language={language} />
       <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
         {p.content}
       </ReactMarkdown>

@@ -23,12 +23,12 @@ function App() {
           path="/"
           element={<Info language={lang} onClick={langToggle} />}
         />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog" element={<Blog language={lang} />} />
         {posts.posts.map((p) => (
           <Route
             key={p.id}
             path={"/blog/" + p.id}
-            element={<BlogPost post={p.id} />}
+            element={<BlogPost language={lang} post={p.id} />}
           />
         ))}
       </Routes>
